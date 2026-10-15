@@ -1,0 +1,13 @@
+@use "../helpers" as *;
+
+.section {
+  padding: rem(16);
+
+  &__inner {
+    padding: rem(22) 0;
+
+    @include tablet-S {
+      padding-block: rem(20);
+    }
+  }
+}

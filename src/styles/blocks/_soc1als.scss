@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+
+.soc1als {
+
+  &__list {
+    display: flex;
+    column-gap: rem(10);
+  }
+
+  &__icon {
+    transition-duration: var(--transition-duration);
+
+    &:hover {
+      scale: 1.09 !important;
+    }
+
+    @include mobile {
+      width: rem(25);
+      height: rem(25);
+    }
+  }
+
+}

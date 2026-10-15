@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+  </head>
+  <body>
+
+  <header class="header" data-js-header>
+    <div class="header__inner">
+
+      <div class="header__settings switchers">
+        <a href="./index.html">
+          <img src="./public/icons/header/logo.svg" alt="logo">
+        </a>
+        <button class="switchers__theme-btn" type="button" title="включить светлую тему" data-js-btn-switcher-theme>
+          <span class="visually-hidden" data-js-lang="switchButton">Кнопка переключения светлой темы</span>
+          <img title="" src="" width="36" height="36" alt="" data-js-btn-switcher-theme-icon>
+        </button>
+
+        <div class="language-switcher" data-js-lang-switcher>
+          <button class="language-switcher__button" type="button" title="кнопка переключения языка" data-js-lang-button="en">
+            <img src="./public/icons/header/icon-switch-language-english.svg" data-js-lang-button-icon>
+            <span class="visually-hidden" data-js-lang="switchButtonLang">a button to switch the language</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="header__avatar profile-info">
+        <div class="profile-info__box-photo">
+          <img class="profile-info__photo" src="./public/images/header/avatar-photo.jpg" alt="photo-avatar">
+        </div>
+        <span class="profile-info__name" data-lang="header.name" data-js-lang="name">Игорь Костюченко</span>
+        <p class="profile-info__job" data-lang="header.profession" >Front-end developer</p>
+      </div>
+
+      <nav class="header__nav main-menu">
+        <ul class="main-menu__list list-reset">
+          <li class="main-menu__item"> <a class="main-menu__link button" href="#home" data-lang="header.main" data-js-lang="buttonMain">главная</a> </li>
+          <li class="main-menu__item"> <a class="main-menu__link button" href="#about" data-lang="header.about" data-js-lang="buttonAbout">обо мне</a> </li>
+          <li class="main-menu__item"> <a class="main-menu__link button" href="#education" data-lang="header.education" data-js-lang="buttonEducation">образование</a> </li>
+          <li class="main-menu__item"> <a class="main-menu__link button" href="#portfolio" data-lang="header.portfolio" data-js-lang="buttonPortfolio">портфолио</a> </li>
+          <li class="main-menu__item"> <a class="main-menu__link button" href="#contact" data-lang="header.contacts" data-js-lang="buttonContacts">контакты</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="burger" >
+      <button class="burger__button" type="button" title="menu" data-js-burger-button>
+        <span class="visually-hidden">button burger menu</span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+
+    <h1 class="visually-hidden">Page portfolio</h1>
+
+    <section class="hero" id="home">
+      <div class="hero__inner">
+          <div class="hero__body">
+            <h2 class="hero__title print-text" data-js-lang="myNameIs" >Привет! Меня зовут Игорь.</h2>
+            <p class="hero__subtitle print-text" data-js-title data-js-lang="iWebDeveloper">Я веб разработчик.</p>
+            <p class="hero__description" data-js-lang="myDescription">Создаю интерактивные веб-интерфейсы, превращаю идеи в пиксельно точные интерфейсы и наполняю их жизнью благодаря современным технологиям React, TypeScript и экосистеме современного JavaScript.
+              Создаю не просто сайты — а цифровые продукты, которые решают бизнес-задачи. Моя цель — помогать бизнесу расти через качественный UI/UX дизайн и надежный frontend</p>
+          </div>
+
+        <button class="hero__button button">
+          <span data-js-lang="heroAbout">обо мне</span>
+          <svg class="hero__button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section__inner about">
+        <h2 class="about__title title" id="about-title" data-js-lang="sectionAboutTitle">Обо <span class="title--sub about__title--sub" data-js-lang="sectionAboutTitleMy">Мне</span></h2>
+
+        <div class="about__info">
+          <div class="about__questionnaire questionnaire">
+            <dl class="questionnaire__info">
+              <dt class="questionnaire__term" data-js-lang="sectionAboutKeyName">имя:</dt>
+              <dd class="questionnaire__detail" data-js-lang="sectionAboutName">Игорь Костюченко</dd>
+
+              <dt class="questionnaire__term" data-js-lang="sectionAboutKeyAge">возраст:</dt>
+              <dd class="questionnaire__detail">36</dd>
+
+              <dt class="questionnaire__term" data-js-lang="sectionAboutKeyProfession">профессия:</dt>
+              <dd class="questionnaire__detail" data-js-lang="sectionAboutProfession">разработчик</dd>
+
+              <dt class="questionnaire__term" data-js-lang="sectionAboutKeyQualification">квалификация:</dt>
+              <dd class="questionnaire__detail" data-js-lang="sectionAboutQualification">новичок</dd>
+            </dl>
+
+            <a href="./public/Main.jpg" download="resume">
+              <button class="questionnaire__button button button--questionnaire" type="button" title="скачать резюме">
+                <span data-js-lang="sectionAboutButton">Скачать БД</span>
+                <svg class="button__icon" fill="#ffffff" width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"/>
+                </svg>
+              </button>
+            </a>
+          </div>
+
+          <div class="about__description">
+            <p data-js-lang="sectionAboutDescriptionOne">Я фронтенд-разработчик, живу в Нижегородской области. Я могу разрабатывать адаптивные веб-сайты с нуля и превращать их в современные веб-приложения, удобные для пользователя.</p>
+            <p data-js-lang="sectionAboutDescriptionTwo">Вот уже более года я увлечен тем, что превращаю свой творческий потенциал и знания в веб-сайты. Я помогаю различным клиентам расширить свое присутствие в Интернете. Я всегда стремлюсь узнать о новейших технологиях и фреймворках</p>
+            <p data-js-lang="sectionAboutDescriptionThree">Я начал свой путь в качестве веб-разработчика в 2024 году, и с тех пор продолжаю расти и эволюционировать как разработчик, принимая новые вызовы и попутно осваивая новейшие технологии. Я создаю передовые веб-приложения, используя такие современные технологии, как React, Next.js, TypeScript, и многое другое.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section__inner education">
+          <h2 class="education__title title" id="education-title" data-js-lang="educationMy">Моё <span class="education__title--sub title--sub" data-js-lang="educationEducation">Образование</span></h2>
+
+          <div class="education__inner">
+
+            <div class="education__experience">
+              <ul class="education__experience-list list-reset">
+
+                <li class="education__experience-item">
+                  <article class="experience-card">
+                    <div class="experience-card__icon-wrapper">
+                      <svg class="experience-card__icon" id="Layer_1" viewBox="0 0 64 64" width="27" height="27" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+                        <g fill="rgb(255,255,255)">
+                          <path d="m44.2736 40.732a52.11 52.11 0 0 0 -12.2666-1.296 52.1113 52.1113 0 0 0 -12.267 1.296c-3.8.9657-5.7271 2.3168-5.7271 4.016s1.9269 3.05 5.7271 4.0159a52.1109 52.1109 0 0 0 12.267 1.2961 52.1091 52.1091 0 0 0 12.2666-1.2961c3.8-.9657 5.7272-2.3168 5.7272-4.0159s-1.9269-3.0503-5.7272-4.016z"></path>
+                          <path d="m14.5978 41.2473a14.6325 14.6325 0 0 1 4.7762-1.9566 53.6137 53.6137 0 0 1 12.633-1.3418 53.6134 53.6134 0 0 1 12.633 1.3418 14.6325 14.6325 0 0 1 4.7762 1.9566 6.5007 6.5007 0 0 1 .5461.4271v-11.1655c0-1.6994-1.92-3.05-5.7072-4.0159a51.8946 51.8946 0 0 0 -12.248-1.2962 51.8964 51.8964 0 0 0 -12.2483 1.2962c-3.7869.9654-5.707 2.3165-5.707 4.0159v11.1655a6.54 6.54 0 0 1 .546-.4271z"></path>
+                          <path d="m59.511 26.9239-25.9626-12.6611a3.8751 3.8751 0 0 0 -3.0968 0l-25.9626 12.6611a1.52 1.52 0 0 0 0 2.8685l8.0757 3.9382v-3.2217a4.2261 4.2261 0 0 1 2.0647-3.4989 14.556 14.556 0 0 1 4.7621-1.9575 53.3931 53.3931 0 0 1 12.6155-1.3425 53.3928 53.3928 0 0 1 12.6154 1.342 14.5576 14.5576 0 0 1 4.7622 1.958 4.2262 4.2262 0 0 1 2.0646 3.4994v3.2149l4.0063-1.9543v3.33l-1.5173 8.011a1.7022 1.7022 0 0 0 0 .4933 2.47 2.47 0 0 0 2.815 1.77 2.176 2.176 0 0 0 2.2013-2.2628l-1.5162-8.0065v-4.3018l2.0728-1.0108a1.52 1.52 0 0 0 0-2.8685z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <time class="experience-card__date" datetime="2011-06-20" data-js-lang="educationDate1">20 июня 2011</time>
+                    <h3 class="experience-card__title" data-js-lang="educationSpecialization1">Автоматизированные системы обработак информации и управления</h3>
+                    <div class="experience-card__description">
+                      <p data-js-lang="educationDescription1">Присуждена степень бакалавра Техники и Технологии по направлению "Информатика и Вычислительная Техника". Проходил обучени с 2007 г. в Негосударственном
+                       образовательном учреждении "Современная гуманитарная академия", по 2011 г. Очная форма</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="education__experience-item">
+                  <article class="experience-card">
+                    <div class="experience-card__icon-wrapper">
+                      <svg class="experience-card__icon" id="Layer_1" viewBox="0 0 64 64" width="27" height="27" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+                        <g fill="rgb(255,255,255)">
+                          <path d="m44.2736 40.732a52.11 52.11 0 0 0 -12.2666-1.296 52.1113 52.1113 0 0 0 -12.267 1.296c-3.8.9657-5.7271 2.3168-5.7271 4.016s1.9269 3.05 5.7271 4.0159a52.1109 52.1109 0 0 0 12.267 1.2961 52.1091 52.1091 0 0 0 12.2666-1.2961c3.8-.9657 5.7272-2.3168 5.7272-4.0159s-1.9269-3.0503-5.7272-4.016z"></path>
+                          <path d="m14.5978 41.2473a14.6325 14.6325 0 0 1 4.7762-1.9566 53.6137 53.6137 0 0 1 12.633-1.3418 53.6134 53.6134 0 0 1 12.633 1.3418 14.6325 14.6325 0 0 1 4.7762 1.9566 6.5007 6.5007 0 0 1 .5461.4271v-11.1655c0-1.6994-1.92-3.05-5.7072-4.0159a51.8946 51.8946 0 0 0 -12.248-1.2962 51.8964 51.8964 0 0 0 -12.2483 1.2962c-3.7869.9654-5.707 2.3165-5.707 4.0159v11.1655a6.54 6.54 0 0 1 .546-.4271z"></path>
+                          <path d="m59.511 26.9239-25.9626-12.6611a3.8751 3.8751 0 0 0 -3.0968 0l-25.9626 12.6611a1.52 1.52 0 0 0 0 2.8685l8.0757 3.9382v-3.2217a4.2261 4.2261 0 0 1 2.0647-3.4989 14.556 14.556 0 0 1 4.7621-1.9575 53.3931 53.3931 0 0 1 12.6155-1.3425 53.3928 53.3928 0 0 1 12.6154 1.342 14.5576 14.5576 0 0 1 4.7622 1.958 4.2262 4.2262 0 0 1 2.0646 3.4994v3.2149l4.0063-1.9543v3.33l-1.5173 8.011a1.7022 1.7022 0 0 0 0 .4933 2.47 2.47 0 0 0 2.815 1.77 2.176 2.176 0 0 0 2.2013-2.2628l-1.5162-8.0065v-4.3018l2.0728-1.0108a1.52 1.52 0 0 0 0-2.8685z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <time class="experience-card__date" datetime="2025-07-07" data-js-lang="educationDate2">01 июля 2025</time>
+                    <h3 class="experience-card__title" data-js-lang="educationSpecialization2">Профессиональная веб-разработка</h3>
+                    <div class="experience-card__description">
+                      <p data-js-lang="educationDescription2">Данное обучение и диплом свидетельстует о том, что прошёл профессиональную переподготовку в Национальном исследовательском Нижегородском государственном университете им. Н.И.Лобачевского по программе "Профессиональная вкб-разработка (504 часа)". С 14 сентябра 2024 г. по 28 июня 2025 г.</p>
+                    </div>
+                  </article>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="education__skills skills">
+              <header class="skills__header">
+                <h3 class="skills__title" data-js-lang="skills">Навыки</h3>
+                <p class="skills__description" data-js-lang="skillsDescription">Навыки, инструменты и технологии, которыми я владею или которые изучаю</p>
+              </header>
+
+              <ul class="skills__list list-reset" data-js-skills-list>
+                <li class="skills__item" data-skill-level="100%">
+                  <img src="./public/icons/education-section/skills/html-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="75%">
+                  <img src="./public/icons/education-section/skills/css-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="77%">
+                  <img src="./public/icons/education-section/skills/js-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="90%">
+                  <img src="./public/icons/education-section/skills/figma-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="78%">
+                  <img src="./public/icons/education-section/skills/scss-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="80%">
+                  <img src="./public/icons/education-section/skills/git-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="80%">
+                  <img src="./public/icons/education-section/skills/vit-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="65%">
+                  <img src="./public/icons/education-section/skills/ts-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="60%">
+                  <img src="./public/icons/education-section/skills/react-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="65%">
+                  <img src="./public/icons/education-section/skills/node-js-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="40%">
+                  <img src="./public/icons/education-section/skills/express-icon.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+
+                <li class="skills__item" data-skill-level="50%">
+                  <img src="./public/icons/education-section/skills/docker.icon%201.svg" alt="иконка дисциплины ЭВМ" width="30" height="30" loading="lazy">
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="section__inner portfolio">
+        <h2 class="portfolio__title title" id="portfolio-title" data-js-lang="portfolioMy">Мои <span class="education__title--sub title--sub" data-js-lang="portfolioProjects">проекты</span></h2>
+
+        <div class="portfolio__inner" data-js-tabs>
+
+          <div class="education__tabs tabs" role="tablist" >
+            <ul class="tabs__list list-reset">
+              <li class="tabs__item">
+                <button
+                        class="tabs__button"
+                        type="button"
+                        aria-controls="tab-all"
+                        role="tab"
+                        aria-selected="true"
+                        tabindex="-1"
+                        data-js-button-tab="tab-all"
+                        data-js-lang="portfolioButtonAll"
+                >Все
+                </button>
+              </li>
+
+              <li class="tabs__item">
+                <button
+                        class="tabs__button"
+                        type="button"
+                        aria-controls="tab-1"
+                        role="tab"
+                        aria-selected="false"
+                        tabindex="-1"
+                        data-js-button-tab="tab-2"
+                >HTML и CSS</button>
+              </li>
+
+              <li class="tabs__item">
+                <button
+                        class="tabs__button"
+                        type="button"
+                        aria-controls="tab-2"
+                        role="tab"
+                        aria-selected="false"
+                        tabindex="-1"
+                        data-js-button-tab="tab-3"
+                >Vanilla JS</button>
+              </li>
+
+              <li class="tabs__item">
+                <button
+                        class="tabs__button"
+                        type="button"
+                        aria-controls="tab-3"
+                        role="tab"
+                        aria-selected="false"
+                        tabindex="-1"
+                        data-js-button-tab="tab-4"
+                >React</button>
+              </li>
+
+              <li class="tabs__item">
+                <button
+                        class="tabs__button"
+                        type="button"
+                        aria-controls="tab-4"
+                        role="tab"
+                        aria-selected="false"
+                        tabindex="-1"
+                        data-js-button-tab="tab-5"
+                >Next.js</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tabs__body">
+
+            <div class="tabs__panel" id="tab-2" tabindex="0" data-js-panel>
+              <ul class="tabs__panel-list list-reset">
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/Crossfit" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/html-css-scss/Crossfit.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Crossfit</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/Crossfit" target="_blank" title="Проект на git-hub">
+                          <svg title="Проект на git-hub" width="70" height="15" viewBox="0 0 114 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.8013 0C9.76163 0.000126048 6.82116 1.08185 4.50605 3.05163C2.19093 5.02141 0.652262 7.7507 0.165342 10.7511C-0.321578 13.7516 0.275029 16.8274 1.84841 19.4282C3.4218 22.029 5.86928 23.9851 8.75294 24.9465C9.39301 25.0585 9.63303 24.6745 9.63303 24.3384C9.63303 24.0344 9.61702 23.0263 9.61702 21.9542C6.40068 22.5463 5.5686 21.1702 5.31257 20.4501C5.02848 19.7498 4.57813 19.1292 4.00044 18.6419C3.55239 18.4019 2.91233 17.8098 3.98443 17.7938C4.39379 17.8382 4.78642 17.9807 5.12904 18.2091C5.47166 18.4375 5.75417 18.7451 5.95264 19.1059C6.12772 19.4204 6.36315 19.6973 6.64543 19.9207C6.92771 20.1441 7.2513 20.3096 7.59764 20.4077C7.94399 20.5058 8.3063 20.5346 8.6638 20.4924C9.02129 20.4503 9.36696 20.338 9.68099 20.162C9.73641 19.5112 10.0264 18.9028 10.4971 18.4499C7.64881 18.1299 4.67251 17.0257 4.67251 12.1293C4.65452 10.857 5.12399 9.62607 5.98464 8.68892C5.59328 7.58317 5.63907 6.36969 6.11265 5.29657C6.11265 5.29657 7.18472 4.96053 9.63301 6.60871C11.7277 6.03261 13.939 6.03261 16.0337 6.60871C18.4819 4.94454 19.554 5.29657 19.554 5.29657C20.0277 6.36967 20.0735 7.58318 19.682 8.68892C20.5453 9.62447 21.0151 10.8565 20.9942 12.1293C20.9942 17.0417 18.0018 18.1299 15.1536 18.4499C15.4591 18.7595 15.6944 19.1313 15.8435 19.5399C15.9926 19.9486 16.052 20.3845 16.0177 20.8181C16.0177 22.5303 16.0016 23.9064 16.0016 24.3385C16.0016 24.6745 16.2417 25.0746 16.8817 24.9466C19.7603 23.9773 22.2008 22.0166 23.7674 19.4145C25.3341 16.8124 25.9251 13.7381 25.4348 10.7406C24.9445 7.74305 23.4049 5.0173 21.0908 3.04992C18.7767 1.08254 15.8387 0.00158084 12.8013 0Z"
+                                  fill="#161B22"/>
+                            <path d="M42.6211 20.7605C41.1084 20.7605 39.7867 20.4167 38.6559 19.7291C37.5252 19.0415 36.6466 18.0865 36.0201 16.8641C35.3936 15.6264 35.0804 14.19 35.0804 12.5551C35.0804 10.9048 35.4012 9.45319 36.043 8.20022C36.7001 6.93197 37.6245 5.94639 38.8164 5.24351C40.0235 4.52534 41.4522 4.16626 43.1024 4.16626C44.9819 4.16626 46.5405 4.61702 47.7782 5.51855C49.0159 6.42008 49.8181 7.66541 50.1848 9.25455H46.9072C46.6627 8.50582 46.2196 7.92518 45.5778 7.51261C44.9361 7.08477 44.1109 6.87084 43.1024 6.87084C41.498 6.87084 40.2603 7.38273 39.3894 8.4065C38.5184 9.41499 38.0829 10.8055 38.0829 12.578C38.0829 14.3505 38.5108 15.7257 39.3664 16.7036C40.2374 17.6663 41.414 18.1476 42.8962 18.1476C44.3478 18.1476 45.4403 17.758 46.1738 16.9787C46.9225 16.1841 47.3733 15.1451 47.5261 13.8615H43.4692V11.6612H50.4828V20.4855H47.7782L47.549 18.3768C47.0295 19.1408 46.38 19.7291 45.6008 20.1417C44.8215 20.5542 43.8283 20.7605 42.6211 20.7605ZM54.8476 7.35217C54.3128 7.35217 53.8697 7.19173 53.5183 6.87084C53.1821 6.54996 53.014 6.14504 53.014 5.65607C53.014 5.16711 53.1821 4.76982 53.5183 4.46422C53.8697 4.14333 54.3128 3.98289 54.8476 3.98289C55.3825 3.98289 55.8179 4.14333 56.1541 4.46422C56.5055 4.76982 56.6813 5.16711 56.6813 5.65607C56.6813 6.14504 56.5055 6.54996 56.1541 6.87084C55.8179 7.19173 55.3825 7.35217 54.8476 7.35217ZM53.3807 20.4855V9.11703H56.3145V20.4855H53.3807ZM64.4421 20.4855C63.2502 20.4855 62.2952 20.1952 61.5771 19.6145C60.8589 19.0339 60.4998 18.0024 60.4998 16.5203V11.5695H58.5516V9.11703H60.4998L60.8436 6.06864H63.4336V9.11703H66.5049V11.5695H63.4336V16.5432C63.4336 17.0933 63.5482 17.4753 63.7774 17.6892C64.0219 17.8878 64.4345 17.9872 65.0151 17.9872H66.4362V20.4855H64.4421ZM69.0926 20.4855V4.4413H72.0264V11.1111H79.2233V4.4413H82.1571V20.4855H79.2233V13.4948H72.0264V20.4855H69.0926ZM89.4699 20.7605C88.0489 20.7605 86.9487 20.3174 86.1694 19.4311C85.4054 18.5449 85.0234 17.2461 85.0234 15.5347V9.11703H87.9343V15.2597C87.9343 16.2376 88.1329 16.9863 88.5302 17.5058C88.9275 18.0254 89.554 18.2851 90.4097 18.2851C91.2195 18.2851 91.8842 17.9948 92.4037 17.4142C92.9385 16.8335 93.2059 16.0237 93.2059 14.9846V9.11703H96.1397V20.4855H93.5497L93.3205 18.5602C92.9691 19.2325 92.4572 19.7673 91.7849 20.1646C91.1278 20.5619 90.3562 20.7605 89.4699 20.7605ZM105.89 20.7605C105.034 20.7605 104.286 20.6001 103.644 20.2792C103.002 19.9583 102.482 19.5075 102.085 18.9269L101.764 20.4855H99.1514V3.98289H102.085V10.7444C102.452 10.2401 102.933 9.797 103.529 9.41499C104.14 9.03299 104.927 8.84199 105.89 8.84199C106.96 8.84199 107.915 9.10175 108.755 9.62127C109.595 10.1408 110.26 10.8513 110.749 11.7529C111.238 12.6544 111.483 13.6782 111.483 14.8242C111.483 15.9702 111.238 16.994 110.749 17.8955C110.26 18.7817 109.595 19.4846 108.755 20.0041C107.915 20.5084 106.96 20.7605 105.89 20.7605ZM105.271 18.1934C106.203 18.1934 106.975 17.8802 107.586 17.2537C108.197 16.6272 108.503 15.8174 108.503 14.8242C108.503 13.831 108.197 13.0135 107.586 12.3717C106.975 11.7299 106.203 11.4091 105.271 11.4091C104.324 11.4091 103.544 11.7299 102.933 12.3717C102.337 12.9982 102.039 13.808 102.039 14.8013C102.039 15.7945 102.337 16.612 102.933 17.2537C103.544 17.8802 104.324 18.1934 105.271 18.1934Z"
+                                  fill="#161B22"/>
+                          </svg>
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabHTMLOne">Адаптивный лендинг фитнес-центра Crossfit. Чистая верстка на HTML5 и CSS3
+                        с использованием Flexbox/Grid. Полностью валидный код, семантическая разметка,
+                        кроссбраузерная совместимость.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/Hi-Brain-message-board" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/html-css-scss/Hi-Brain.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Hi-Brain</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/Hi-Brain-message-board" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabHTMLTwo">Адаптивный лендинг объявлений на чистом HTML/CSS. Сетка карточек на Flexbox, семантическая разметка, валидный код. Демонстрация навыков верстки сложных интерфейсов.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/Ink-House" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/html-css-scss/Ink-House.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Ink-House</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/Ink-House" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabHTMLThree">Адаптивный лендинг рекламы картин Ink-House. Чистая верстка на HTML5 и CSS3 с использованием Flexbox/Grid. Полностью валидный код, семантическая разметка, кроссбраузерная совместимость.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/Lionik" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/html-css-scss/Lionic.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Lionik</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/Lionik" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabHTMLFour">Адаптивный лендинг Lionik. Чистая верстка на HTML5 и CSS3 с использованием Flexbox/Grid. Полностью валидный код, семантическая разметка, кроссбраузерная совместимость.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/Neuros" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/html-css-scss/Neuros.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Neuros</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/Neuros" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabHTMLFive">Адаптивный лендинг Neuros. Чистая верстка на HTML5 и CSS3 с использованием Flexbox/Grid. Полностью валидный код, семантическая разметка, кроссбраузерная совместимость.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/Positivus" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/html-css-scss/Positivus.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Positivus</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/Positivus" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabHTMLSix">Адаптивный лендинг Positivus. Чистая верстка на HTML5 и CSS3 с использованием Flexbox/Grid. Полностью валидный код, семантическая разметка, кроссбраузерная совместимость.</p>
+                    </div>
+                  </article>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="tabs__panel" id="tab-3" tabindex="0" data-js-panel>
+              <ul class="tabs__panel-list list-reset">
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/FutureTech" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/vanilla-js/FutureTech.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">FutureTech</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Vanilla js</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/FutureTech" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabVanillaOne">Многостраничный сайт технологического стартапа. Включает: главную страницу с анимациями, блог с динамической загрузкой статей. Frontend на чистом JavaScript без фреймворков.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/examplesOfTasks/tree/main/04-Movi-App" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/vanilla-js/Movi-web-side-API.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Movie-web-site-API</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Vanilla js</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/examplesOfTasks/tree/main/04-Movi-App" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabVanillaTwo">Одностраничный Веб-сайт для поиска фильмов через публичное API. Динамическая загрузка данных, фильтрация, пагинация. Чистый JavaScript, адаптивный дизайн. Клиентская сторона на чистом JavaScript с использованием Fetch API.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/examplesOfTasks/tree/main/11-Shop-Quadro" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/vanilla-js/The-Drone-Store.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">The-Drone-Store</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Vanilla js</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/examplesOfTasks/tree/main/11-Shop-Quadro" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabVanillaThree">Интернет-магазин дронов с полным циклом покупки. Реализованы: каталог товаров с фильтрами, детальные карточки товаров, корзина покупок, оформление заказа. Динамическое обновление цены и количества товаров в реальном времени.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/examplesOfTasks/tree/main/22-todo-list/02-Todo-List-and-LocalStorage" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/vanilla-js/ToDo-List-vanila-js.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">ToDo-List-vanilla</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Vanilla js</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/examplesOfTasks/tree/main/22-todo-list/02-Todo-List-and-LocalStorage" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabVanillaFour">Приложение ToDo List с полным CRUD-функционалом: создание, чтение, удаление задач. Простое и функциональное ToDo-приложение. Добавление, отметка выполнения, удаление задач. Сохранение в LocalStorage.</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabs__panel" id="tab-4" tabindex="0" data-js-panel>
+              <ul class="tabs__panel-list list-reset">
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/MegaMart" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/react/Electronics-Store.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Electronics-Store</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">React</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/MegaMart" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabReactOne">Интернет-магазин бытовой электроники на React с многостраничной архитектурой (React Router) с Redux Toolkit для state management. Полный цикл покупки: каталог, фильтрация, корзина. Управление состоянием через Context API + LocalStorage для сохранения корзины. Адаптивный дизайн, работа с формами.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="https://github.com/Igor-lab-git/examplesOfTasks/tree/main/29-reacts-practice/02-TODO-LIST-LAMKOV-CONTEXT-Provider" target="_blank">
+                        <img class="tab-card__image" src="./src/assets/images-section-portfolio/react/ToDo-List-React.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">ToDo-List</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">React</span>
+                        <a class="tab-card__link-project" href="https://github.com/Igor-lab-git/examplesOfTasks/tree/main/29-reacts-practice/02-TODO-LIST-LAMKOV-CONTEXT-Provider" target="_blank">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabReactTwo">Типизированное ToDo-приложение на React с использованием TypeScript и с использованием продвинутых хуков: Context для глобального состояния, useEffect для синхронизации с LocalStorage, useMemo для мемоизации фильтрованных задач, useCallback для стабильных колбэков. Функции: поиск по задачам, поиск первой невыполненной задачи.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="#">
+                        <img class="tab-card__image" src="./public/images/portfolio-section/image-project.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Портфолио</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="#">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description" data-js-lang="portfolioTabReactTree">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at expedita facilis fugit laudantium odio optio repellendus sunt tempora ullam.</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabs__panel" id="tab-5" tabindex="0" data-js-panel>
+              <ul class="tabs__panel-list list-reset">
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="#">
+                        <img class="tab-card__image" src="./public/images/portfolio-section/image-project.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Портфолио</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="#">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at expedita facilis fugit laudantium odio optio repellendus sunt tempora ullam.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="#">
+                        <img class="tab-card__image" src="./public/images/portfolio-section/image-project.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Портфолио</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="#">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at expedita facilis fugit laudantium odio optio repellendus sunt tempora ullam.</p>
+                    </div>
+                  </article>
+                </li>
+
+                <li class="tabs__panel-item">
+                  <article class="tabs__card tab-card">
+                    <div class="tab-card__box-image">
+                      <a href="#">
+                        <img class="tab-card__image" src="./public/images/portfolio-section/image-project.png" alt="какртинка проекта на git-hab" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                    <div class="tab-card__body">
+                      <h3 class="tab-card__name">Портфолио</h3>
+                      <div class="tab-card__info">
+                        <span class="tab-card__type-project">Frontend</span>
+                        <a class="tab-card__link-project" href="#">
+                          <img src="./public/icons/portfolio-section/git-hab-icon.svg" width="70" height="15" alt="иконка git-hab" loading="lazy">
+                        </a>
+                      </div>
+                      <p class="tab-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at expedita facilis fugit laudantium odio optio repellendus sunt tempora ullam.</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="portfolio-title">
+      <div class="section__inner contact">
+        <h2 class="contact__title title" id="contact-title" data-js-lang="contactTitleUs">Свяжитесь <span class="education__title--sub title--sub" data-js-lang="contactTitleWithMe">со мной</span></h2>
+
+        <div class="contact__inner">
+
+          <div class="contact__address address">
+            <h3 class="address__title" data-js-lang="addressTitle">Контактная информация</h3>
+
+            <address class="address__info">
+              <ul class="address__info-list list-reset">
+
+                <li class="address__info-item">
+                  <img src="./public/icons/contact-section/Message.svg" width="20" height="20" alt="icon address">
+                  <div class="address__info-emails">
+                    <a class="address__info-link address__info-link--active" href="mailto:kostyuchencko.igor2015@yandex.ru" target="_blank">kostyuchencko.igor2015@yandex.ru</a>
+                    <a class="address__info-link address__info-link--active" href="mailto:igorkost142@gmail.com" target="_blank">igorkost142@gmail.com</a>
+                  </div>
+                </li>
+
+                <li class="address__info-item">
+                  <img src="./public/icons/contact-section/Call.svg" width="20" height="20" alt="icon address">
+                  <a class="address__info-link address__info-link--active" href="tel:+79082370501">+7(908) 237-05-**</a>
+                </li>
+
+                <li class="address__info-item">
+                  <img src="./public/icons/contact-section/Location.svg" width="20" height="20" alt="icon address">
+                  <span class="address__info-link" data-js-lang="addressLocation">Нижегородская область. пос.Лукино ул.Желелезнодорожная</span>
+                </li>
+
+                <li class="address__info-item">
+                  <a href="https://github.com/Igor-lab-git" target="_blank">
+                    <img src="./public/icons/contact-section/Git-hub.svg" width="20" height="20" alt="icon address">
+                  </a>
+                  <a class="address__info-link address__info-link--active" href="https://github.com/Igor-lab-git" target="_blank">
+                    <span>https://github.com/Igor-lab-git</span>
+                  </a>
+                </li>
+
+              </ul>
+            </address>
+          </div>
+
+            <form class="contact__form form" action="https://api.web3forms.com/submit" method="POST" novalidate data-js-form>
+              <input type="hidden" name="access_key" value="e07afe55-e97c-4871-9a05-9525596b9b13">
+              <div class="form__field">
+                <label class="form__label" for="name" data-js-lang="contactFormLabelName">
+                  Ваше имя
+                  <span class="form__required-star" aria-hidden="true">*</span>
+                </label>
+                <input class="form__control"
+                       type="text" id="name"
+                       name="name"
+                       placeholder="name"
+                       aria-errormessage="text-error"
+                       autocomplete="off"
+                       required>
+                <span class="form__error-message" id="text-error" data-js-form-error-message></span>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="email" data-js-lang="contactFormLabelEmail">
+                  Ваша почта
+                  <span class="form__required-star" aria-hidden="true">*</span>
+                </label>
+                <input
+                        class="form__control"
+                        type="email"
+                        id="email"
+                        name="email"
+                        aria-errormessage="email-error"
+                        pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+                        title="введите корректный email адрес"
+                        placeholder="email"
+                        autocomplete="off"
+                        required>
+                <span class="form__error-message" id="email-error" data-js-form-error-message></span>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="telephone" data-js-lang="contactFormLabelNumber">Ваш номер телефона</label>
+                <input class="form__control" type="tel" id="telephone" name="telephone" pattern="^\+7$\d{3}$\s\d{3}-\d{2}-\d{2}$" autocomplete="off" placeholder="+7(999) 999-99-99">
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="message" data-js-lang="contactFormLabelMessage">
+                  Сообщение
+                  <span class="form__required-star" aria-hidden="true">*</span>
+                </label>
+                <textarea class="form__control form__control--textarea" aria-errormessage="message-error" name="message" id="message" cols="30" rows="10" autocomplete="off" placeholder="message" required></textarea>
+                <span class="form__error-message" id="message-error" data-js-form-error-message></span>
+              </div>
+
+              <button class="button button--questionnaire" type="submit" data-js-form-button data-js-lang="contactFormButton">Отправить</button>
+            </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer__inner">
+      <a href="#home">
+        <img class="footer__logo" src="./public/icons/header/logo.svg" width="70" height="20" alt="logo">
+      </a>
+
+      <div class="footer__menu">
+        <nav class="footer__menu extra-menu">
+          <ul class="extra-menu__list list-reset">
+            <li class="extra-menu__item"> <a class="extra-menu__link" href="#home" data-js-lang="footerMain">главная</a> </li>
+            <li class="extra-menu__item"> <a class="extra-menu__link" href="#about" data-js-lang="footerAbout">обо мне</a> </li>
+            <li class="extra-menu__item"> <a class="extra-menu__link" href="#education" data-js-lang="footerEducation">образование</a> </li>
+            <li class="extra-menu__item"> <a class="extra-menu__link" href="#portfolio" data-js-lang="footerPortfolio">портфолио</a> </li>
+            <li class="extra-menu__item"> <a class="extra-menu__link" href="#contact" data-js-lang="footerContacts">контакты</a> </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__soc1als soc1als">
+        <ul class="soc1als__list list-reset">
+
+          <li class="soc1als__item">
+            <a class="soc1als__link" target="_blank" href="https://github.com/Igor-lab-git">
+              <img class="soc1als__icon" src="./public/icons/footer/github.svg" width="30" height="30" alt="иконка соц сети" loading="lazy">
+              <span class="visually-hidden">GitHub</span>
+            </a>
+          </li>
+
+          <li class="soc1als__item">
+            <a class="soc1als__link" target="_blank" href="https://vk.com/id67650862">
+              <img class="soc1als__icon" src="./public/icons/footer/vk.svg" width="30" height="30" alt="иконка соц сети" loading="lazy">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+
+          <li class="soc1als__item">
+            <a class="soc1als__link" href="">
+              <img class="soc1als__icon" src="./public/icons/footer/whats-app.svg" width="30" height="30" alt="иконка соц сети" loading="lazy">
+              <span class="visually-hidden">WhatsApp</span>
+            </a>
+          </li>
+
+          <li class="soc1als__item">
+            <a class="soc1als__link" target="_blank" href="https://t.me/IgorKostuchenko2025">
+              <img class="soc1als__icon" src="./public/icons/footer/telegram.svg" width="30" height="30" alt="иконка соц сети" loading="lazy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">©
+          <time datetime="2026">2026</time>
+           Designed and coded with ❤️️ by Igor
+        </p>
+      </div>
+    </div>
+  </footer>
+
+    <script type="module" src="src/scripts/main.js" defer></script>
+  </body>
+</html>
+
+

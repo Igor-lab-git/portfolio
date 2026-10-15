@@ -1,0 +1,9 @@
+import "../styles/style.scss";
+import "./SwitcherTheme.js";
+import "./ShowHeader.js";
+import "./skillLevels.js";
+import "./TabsPortfolio.js";
+import "./FormSend.js";
+import "./InputMask.js";
+import "./ToggleLanguage.js";
+import "./data/dataLang.json.js";
