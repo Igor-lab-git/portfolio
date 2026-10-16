@@ -2,7 +2,7 @@
 class ShowHeader {
 
     elements = {
-        burgerButton: "[data-js-burger-navigation-button]",
+        burgerButton: "[data-js-burger-button]",
         header: "[data-js-header]",
     }
 
