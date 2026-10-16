@@ -14,8 +14,8 @@ class SwitcherTheme {
     }
 
     srcStateIcon = {
-        lightIcon: "public/icons/header/Icon-theme-light.svg",
-        darkIcon: "public/icons/header/Icon-theme-dark.svg",
+        lightIcon: "/portfolio/icons/header/Icon-theme-light.svg",
+        darkIcon: "/portfolio/icons/header/Icon-theme-dark.svg",
     }
 
     storageKey = "theme"
