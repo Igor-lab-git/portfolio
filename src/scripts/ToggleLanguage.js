@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const configUpdateButton = {
     "ru": {
-        icon: "/icons/header/icon-switch-language-english.svg",
+        icon: "public/icons/header/icon-switch-language-english.svg",
         title: "Переключить не русский язык",
         altTitle: "Русский язык",
         lang: "ru"
     },
     "en": {
-        icon: "/icons/header/icon-switch-language-russia.svg",
+        icon: "public/icons/header/icon-switch-language-russia.svg",
         title: "Language switch button",
         altTitle: "English language",
         lang: "en"
